@@ -4,9 +4,9 @@ historyApiFallback = require("connect-history-api-fallback");
 
 gulp.task('server', function(){
   connect.server({
-    root: "./app",
+    root: "/app",
     hostname: "0.0.0.0",
-    port: "8085",
+    port: "8086",
     livereloa: true,
     middleware: function(connect,opt){
       return [historyApiFallback];
@@ -17,7 +17,7 @@ gulp.task('server', function(){
 var stylus = require("gulp-stylus");
 nib =require("nib");
 gulp.task('css',function(){
-  gulp.src('./app/stlyesheets/main.styl')
+  gulp.src('/app/stlyesheets/main.styl')
   .pipe(stylus({use: nib()}))
   .pipe(gulp.dest('./app/stlyesheets'))
   .pipe(connect.reload());
@@ -30,8 +30,8 @@ gulp.task('html', function(){
 })
 
 gulp.task('watch', function(){
-  gulp.watch(['./app/**/*.html'],['html']);
-  gulp.watch(['./apps/stylesheets/**/*.styl'],['css'])
+  gulp.watch(['/app/**/*.html'],['html']);
+  gulp.watch(['/apps/stylesheets/**/*.styl'],['css'])
 });
 
 gulp.task('default',['server', 'watch']);
