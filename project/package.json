@@ -3,17 +3,14 @@
   "version": "0.0.1",
   "description": "ejemplo",
   "bugs": {
-    "url": "https://github.com/silvasindy/ebook-frontend-project/issueslog",
-    "email": "silvasindy"
-  },
-  "license": "MIT",
-  "autor": {
-    "name": "sindy silva",
+    "url": "https://github.com/silvasindy/ebook-frontend-project/issues",
     "email": "silvasindy@gmail.com"
   },
+  "license": "MIT",
+  "author": "sindy",
   "repository": {
     "type": "git",
-    "url": "https://github.com/silvasindy/ebook-frontend-project"
+    "url": "git+https://github.com/silvasindy/ebook-frontend-project.git"
   },
   "dependencies": {},
   "devDependencies": {
@@ -26,7 +23,17 @@
     "gulp-stylus": "^2.5.0",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.0",
+    "jshint": "^2.9.3",
     "nib": "^1.1.2",
     "useref": "^1.2.0"
-  }
+  },
+  "homepage": "https://github.com/silvasindy/ebook-frontend-project#readme",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "keywords": [
+    "gulp"
+  ]
 }
